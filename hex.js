@@ -6,5 +6,13 @@ const btn = document.getElementById('btn');
 const color = document.querySelector('.color');
 
 btn.addEventListener('click', function() {
+let hexColor = '#'; // # is the starting point of a hex color code
 
+//for loop iterates through the hex array and generates a random hex color code
+for (let i = 0; i < 6; i++) {
+    hexColor = hexColor + hex[0];
+}
+
+color.textContent = hexColor;
+document.body.style.backgroundColor =hexColor;
 });
