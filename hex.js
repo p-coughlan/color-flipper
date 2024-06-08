@@ -14,6 +14,7 @@ for (let i = 0; i < 6; i++) {
     hexColor = hexColor + hex[getRandomNumber()];
 }
 
+//changes the background color of the body and the text content of the color class, displaying the hex color code
 color.textContent = hexColor;
 document.body.style.backgroundColor =hexColor;
 });
